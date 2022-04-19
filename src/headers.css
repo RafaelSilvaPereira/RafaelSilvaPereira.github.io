@@ -1,0 +1,53 @@
+
+body {
+  height: 1vmax;
+  background-color: #363334;
+}
+
+
+.header {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 6em;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "logo . sobre-mim formacao contato";
+  grid-area: header;
+  background: linear-gradient(202deg, rgba(61, 61, 61, 1) 0%, rgba(34, 30, 31, 1) 29%, rgba(38, 38, 38, 1) 53%, rgba(11, 10, 10, 1) 100%);
+
+
+}
+
+.navigation a {
+
+  color: var(--font-title-1);
+  font-size: larger;
+  text-decoration: none;
+}
+
+.logo {
+  margin-left: 20%;
+  grid-area: logo;
+}
+
+.logo-img {
+  height: 130%;
+}
+
+.sobre-mim {
+  padding-top: 50px;
+  grid-area: sobre-mim;
+}
+
+.formacao {
+  padding-top: 50px;
+  grid-area: formacao;
+}
+
+
+.contato {
+  padding-top: 50px;
+  grid-area: contato;
+}

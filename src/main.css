@@ -1,0 +1,172 @@
+main {
+  height: 1vh;
+
+}
+
+.about-me-bg {
+  background-color: var(--background-primary);
+  height: 15rem;
+}
+
+#about-me {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 8fr 4fr 7fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "title"
+    "subtitulo"
+    "resumo";
+  text-align: justify;
+}
+
+.title {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "content .";
+  grid-area: title;
+}
+
+.content {
+  grid-area: content;
+  color: var(--font-title-2);
+  font-size: x-large;
+
+}
+
+.subtitulo {
+  grid-area: subtitulo;
+  color: var(--font-sub-title);
+  font-style: italic;
+  font-size: large;
+}
+
+.resumo {
+  display: grid;
+  grid-template-columns: 0.7fr 1.5fr 0.8fr;
+  grid-template-rows: 0.4fr 2fr 0.6fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . ."
+    "resumo-conteudo resumo-conteudo ."
+    "resumo-conteudo resumo-conteudo .";
+  grid-area: resumo;
+}
+
+.resumo-conteudo {
+  grid-area: resumo-conteudo;
+
+  color: var(--font-content);
+}
+
+.projects-bg {
+
+  height: 50rem;
+  background-color: var(--background-secondary);
+  background-image: url('../assets/imagens/fundo_have1.svg');
+  background-repeat: no-repeat;
+
+  background-size: cover;
+}
+
+#projects {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 50rem;
+  gap: 0px 0px;
+  grid-template-areas:
+    "flapper sustentec braiscompany";
+}
+
+.flapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 8% 5% auto;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". flapper-name ."
+    "flapper-description flapper-description flapper-description"
+    "flapper-my-job flapper-my-job flapper-my-job";
+  grid-area: flapper;
+  background-color: rgba(255, 192, 203, 0.11);
+  justify-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.flapper-name {
+
+  margin-top: 10%;
+  grid-area: flapper-name;
+
+}
+
+.flapper a {
+  font-weight: bold;
+  color: var(--font-content);
+  text-decoration: none;
+}
+
+.flapper-name a:hover {
+  color: #1DE9B6;
+
+}
+
+.flapper-description {
+  grid-area: flapper-description;
+  font-style: italic;
+}
+
+.flapper-my-job {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 0px 0px;
+  grid-template-areas:
+    "flapper-architect"
+    "flapper-backend"
+    "flapper-mobile";
+  grid-area: flapper-my-job;
+  word-break: break-all;
+}
+
+
+.flapper-architect {
+  grid-area: flapper-architect;
+}
+
+.flapper-backend {
+  grid-area: flapper-backend;
+}
+
+.flapper-mobile {
+  grid-area: flapper-mobile;
+}
+
+
+.sustentec {
+  grid-area: sustentec;
+
+}
+
+.braiscompany {
+  grid-area: braiscompany;
+
+}
+
+
+.card {
+  border-radius: 10% 5% 5% 8%;
+  margin: 5%;
+  background: var(--card-background);
+}

@@ -1,0 +1,21 @@
+:root {
+  --font-title-1: #c19443;
+  --font-title-2: #dbdbdb;
+  --font-sub-title: #a3a3a3;
+  --font-content: #e2e2e2;
+
+  --background-primary: #363334;
+  --background-secondary: #6e634d;
+
+  --card-background: #bababa42;
+
+  --font-family: 'Epilogue', sans-serif;
+
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-family);
+
+}
